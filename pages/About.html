@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avo Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+  </style><!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <style>
+      .owl-dot.active span {
+        background-color: #e11d48 !important;
+      }
+      .owl-dot span {
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        background: #bbb !important;
+        display: block;
+        border-radius: 50%;
+        transition: background 0.3s;
+      }
+    </style>
+<style>
+  @keyframes fadeBackground {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  .fade-bg-1 {
+    background-image: url('https://preview.colorlib.com/theme/avo/images/bg_1.jpg');
+    animation: fadeBackground 10s infinite;
+    
+  }
+
+  .fade-bg-2 {
+    background-image: url('https://preview.colorlib.com/theme/avo/images/bg_2.jpg');
+    animation: fadeBackground 10s infinite;
+    animation-delay: 2s;
+  }
+</style>
+</head>
+
+<body class="bg-black text-white">
+  <!-- Navbar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-gray-900 shadow-md">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <!-- Logo -->
+    <div class="text-xl font-bold text-white">
+      <span class="text-red-600">a</span>vo
+    </div>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+           stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Navigation Links -->
+    <nav id="nav-links"
+         class="hidden md:flex flex-col md:flex-row gap-6 text-sm font-medium md:items-center absolute md:static bg-gray-900 md:bg-transparent w-full left-0 top-full md:w-auto md:mt-0 px-6 md:px-0 py-4 md:py-0">
+             <a href="/index.html" class="text-red-500">HOME</a>
+    <a href="./About.html" class="text-white hover:text-red-500 transition">ABOUT</a>
+    <a href="./Work.html" class="text-white hover:text-red-500 transition">WORK</a>
+    <a href="./Blog.html" class="text-white hover:text-red-500 transition">BLOG</a>
+    <a href="./Contact.html" class="text-white hover:text-red-500 transition">CONTACT</a>
+    </nav>
+  </div>
+</header>
+<div class="bg-white text-gray-800">
+<!---->
+
+<!--Hero Section-->
+  <section class="h-screen relative flex items-center bg-cover bg-center overflow-hidden">
+  <!-- First background -->
+  <div class="absolute inset-0 fade-bg-1 bg-cover bg-center"></div>
+  <!-- Second background -->
+  <div class="absolute inset-0 fade-bg-2 bg-cover bg-center"></div>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+    <div class="flex flex-col justify-center items-start h-full px-6 md:px-20 text-white">
+     
+    <!-- Breadcrumb -->
+    <div class="text-sm text-gray-300 mb-2 ">
+      <a href="#" class="hover:text-red-500">Home</a>
+      <span class="mx-1 text-red-500">❯</span>
+      <span class="text-white">About Us</span>
+      <span class="mx-1 text-red-500">❯</span>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="text-4xl md:text-5xl font-bold">ABOUT US</h1>
+  </div>
+</section>
+  </section>
+  <div class="absolute  top-[48.45rem] left-[0rem] w-[60rem] h-20 bg-gray-100 transform -translate-y-full skew-y-3"></div> 
+  <div class="absolute  top-[48.9rem] left-[60rem] w-[40rem] h-24 bg-gray-100 transform -translate-y-full -skew-y-6"></div> 
+  <!-- Services Section -->
+  <section class="bg-gray-100 py-16 px-4 text-center">
+    <h2 class="text-3xl text-gray-800 font-bold mb-12">ABOUT US</h2>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center">
+      <!-- Service Item -->
+      <div>
+        <img src="https://img.icons8.com/ios-filled/50/design.png" class="mx-auto mb-2 " alt="UI/UX Design">
+        <p class="text-gray-800">UI/UX Design</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/ios-filled/50/code.png" class="mx-auto mb-2" alt="Web Development">
+        <p class="text-gray-800">Web Development</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/ios-filled/50/layers.png" class="mx-auto mb-2" alt="Product Design">
+        <p class="text-gray-800">Product Design</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/ios-filled/50/smartphone.png" class="mx-auto mb-2" alt="Mobile Apps">
+        <p class="text-gray-800">Mobile Apps</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/ios-filled/50/layers.png" class="mx-auto mb-2" alt="SEO">
+        <p class="text-gray-800">SEO</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Content Section -->
+  <section class="bg-gray-100 px-4 py-16">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      
+      <!-- Left Text Block -->
+      <div class="text-center md:text-left md:col-span-1">
+        <h3 class="text-2xl text-gray-800  font-semibold mb-4">Welcome to AVO A<br />Personal Porfolio<br />Web Agency</h3>
+        <p class="text-gray-500">
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+          A small river named Duden flows by their place and supplies it with the necessary regelialia.
+          It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+        </p>
+      </div>
+
+      <!-- Center Image -->
+      <div class="md:col-span-1 flex justify-center">
+        <img src="https://preview.colorlib.com/theme/avo/images/about.jpg" alt="Office" class="rounded shadow-md w-full max-w-sm">
+      </div>
+
+      <!-- Right Text Block -->
+      <div class="text-center md:text-left md:col-span-1">
+        <p class="text-gray-500 mb-4">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+          A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        </p>
+        <button class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition">View all projects</button>
+      </div>
+
+    </div>
+  </section>
+<!---->
+<section class="bg-gray-100 py-16 px-4 sm:px-6 lg:px-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+    
+    <!-- Box 1 -->
+    <div>
+      <div class="text-4xl text-red-600 font-semibold">01</div>
+      <hr class="w-12 border-t border-gray-300 my-2 mx-auto md:mx-0">
+      <h3 class="text-xl text-gray-800 font-semibold mt-2">Search Engine Optimization</h3>
+      <p class="text-gray-500 mt-2 text-sm">
+        Far far away, behind the word mountains
+      </p>
+    </div>
+
+    <!-- Box 2 -->
+    <div>
+      <div class="text-4xl text-red-600 font-semibold">02</div>
+      <hr class="w-12 border-t border-gray-300 my-2 mx-auto md:mx-0">
+      <h3 class="text-xl text-gray-800 font-semibold mt-2">Search Engine Optimization</h3>
+      <p class="text-gray-500 mt-2 text-sm">
+        Far far away, behind the word mountains
+      </p>
+    </div>
+
+    <!-- Box 3 -->
+    <div>
+      <div class="text-4xl text-red-600 font-semibold">03</div>
+      <hr class="w-12 border-t border-gray-300 my-2 mx-auto md:mx-0">
+      <h3 class="text-xl text-gray-800 font-semibold mt-2">Search Engine Optimization</h3>
+      <p class="text-gray-500 mt-2 text-sm">
+        Far far away, behind the word mountains
+      </p>
+    </div>
+
+  </div>
+  
+</section>
+
+<!-- -->
+<div class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="relative w-full max-w-6xl h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden">
+    <!-- Background Image -->
+    <img src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_1280.jpg" alt="Background"
+         class="w-full h-full object-cover" />
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center">
+      <div class="text-left text-white px-6 md:px-12 max-w-md">
+        <p class="text-red-500 font-semibold mb-2">Get Started</p>
+        <h1 class="text-2xl md:text-4xl font-bold leading-snug mb-4">
+          Fill in the brief and get the project estimate
+        </h1>
+        <p class="text-sm md:text-base text-gray-300 mb-6">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+        </p>
+        <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded">
+          Get started
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Expert Team Start -->
+<div class="bg-gray-100">
+  <section class="text-center py-12 px-4">
+    <h2 class="text-3xl font-bold text-gray-900 mb-10">EXPERT TEAM</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+      
+      <!-- Team Member Card -->
+      <div class="p-4 ">
+        <img src="https://www.quantamagazine.org/wp-content/uploads/2019/07/Olivier_1500_Trptch.jpg" alt="Name 1" class="w-[400px] h-[350px] object-cover">
+        <h3 class="text-xl text-gray-800  font-bold mt-4">JOHN WILSON</h3>
+        <p class="text-red-500">Web Designer</p>
+      </div>
+
+      <div class="p-4 ">
+        <img src="https://media.istockphoto.com/id/466061836/photo/beautiful-young-woman-having-a-lunch.jpg?s=170667a&w=0&k=20&c=cMNME6_N4nCpRkF0YAzdkY6qe8P9HoVRIZbo93t57Tg=" alt="Robert Wills" class="w-[400px] h-[350px] object-cover">
+        <h3 class="text-xl text-gray-800 font-bold mt-4">ROBERT WILLS</h3>
+        <p class="text-red-500">Web Developer</p>
+      </div>
+
+      <div class="p-4 ">
+        <img src="https://media.istockphoto.com/id/1466995518/photo/business-woman-and-worker-portrait-at-office-desk-as-administration-executive-company-manager.jpg?s=612x612&w=0&k=20&c=NvKeG6Fh0_VVfH_N0Ka-5j8284XJhL2VTJfe6IwDkWQ=" alt="Name 1" class="w-[400px] h-[350px] object-cover">
+        <h3 class="text-xl text-gray-800 font-bold mt-4">JOHN WILSON</h3>
+        <p class="text-red-500">Web Designer</p>
+      </div>
+
+      <div class="p-4 ">
+        <img src="https://plus.unsplash.com/premium_photo-1682096358356-5ffbe52b7aa1?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGFwcHklMjBtYW58ZW58MHx8MHx8fDA%3D" alt="Name 1" class="w-[400px] h-[350px] object-cover">
+        <h3 class="text-xl text-gray-800 font-bold mt-4">JOHN WILSON</h3>
+        <p class="text-red-500">Web Designer</p>
+      </div>
+
+      <!-- Repeat as needed -->
+      <div class="p-4 ">
+        <img src="https://media.istockphoto.com/id/1042466062/photo/handsome-young-man-in-blue-t-shirt-with-crossed-arms-smiling-and-winking-looking-at-camera.jpg?s=612x612&w=0&k=20&c=AMx5eURAbkpGCctqnhj1EL9yoNnE4Nb7b4ih5UZ3Nys=" alt="Name 1" class="w-[400px] h-[350px] object-cover">
+        <h3 class="text-xl text-gray-800 font-bold mt-4">JOHN WILSON</h3>
+        <p class="text-red-500">Web Designer</p>
+      </div>
+
+      <div class="p-4 ">
+        <img src="https://media.istockphoto.com/id/937519550/photo/successful-young-handsome-american-guy-banker-in-formal-outfit-on-pure-background-with-crossed.jpg?s=612x612&w=0&k=20&c=FytjzWc7etouTdoofqR0InMH5I7Sttu4jPR9BKfy33Y=" alt="Name 1" class="w-[400px] h-[350px] object-cover">
+        <h3 class="text-xl text-gray-800  font-bold mt-4">JOHN WILSON</h3>
+        <p class="text-red-500">Web Designer</p>
+      </div>
+
+      <div class="p-4 ">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/048/674/082/small/focused-mature-man-in-stylish-office-working-on-laptop-business-professional-lawyer-or-banker-in-a-home-environment-photo.jpg" alt="Name 1" class="w-[400px] h-[350px] object-cover">
+        <h3 class="text-xl text-gray-800  font-bold mt-4">JOHN WILSON</h3>
+        <p class="text-red-500">Web Designer</p>
+      </div>
+
+      <div class="p-4 ">
+        <img src="https://t3.ftcdn.net/jpg/06/02/18/62/360_F_602186218_fpYxVU19SUIV1IFYU6g144NBh28dWeFY.jpg" alt="Name 1" class="w-[400px] h-[350px] object-cover">
+        <h3 class="text-xl text-gray-800  font-bold mt-4">JOHN WILSON</h3>
+        <p class="text-red-500">Web Designer</p>
+      </div>
+
+    </div>
+  </section>
+  <!--Expert Team End -->
+
+<!--Abou us-->
+<div class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+  <div class="text-center mb-8 px-4">
+    <h2 class="text-2xl md:text-4xl font-bold text-gray-800">CLIENTS SAY ABOUT US?</h2>
+  </div>
+
+  <div class="w-full max-w-6xl px-4 overflow-hidden">
+    <div class="owl-carousel owl-theme">
+      <!-- Slide 1 -->
+      <div class="flex justify-center">
+        <div class="bg-gray-100 p-8 rounded-lg w-full max-w-md text-center">
+          <div class="text-4xl text-pink-700 mb-2">“</div>
+          <p class="text-gray-600">Far far away, behind the word mountains...</p>
+          <div class="flex items-center justify-center mt-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="h-12 w-12 rounded-full overflow-hidden shadow-md">
+                <img
+                  src="https://i.tribune.com.pk/media/images/2679469-expmimrankhan-1722763997-630-640x4801722765353-0/2679469-expmimrankhan-1722763997-630-640x4801722765353-0.jpg"
+                  alt="Imran Khan"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div>
+                <div class="text-sm font-bold text-gray-800 sm:text-base">Imran Khan</div>
+                <div class="text-xs text-gray-500">Social</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="flex justify-center">
+        <div class="bg-gray-100 p-8 rounded-lg w-full max-w-md text-center">
+          <div class="text-4xl text-pink-700 mb-2">“</div>
+          <p class="text-gray-600">Far far away, behind the word mountains...</p>
+          <div class="flex items-center justify-center mt-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="h-12 w-12 rounded-full overflow-hidden shadow-md">
+                <img
+                  src="https://randomuser.me/api/portraits/men/45.jpg"
+                  alt="John Miller"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div>
+                <div class="text-sm font-bold text-gray-800 sm:text-base">John Miller</div>
+                <div class="text-xs text-gray-500">UX Designer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="flex justify-center">
+        <div class="bg-gray-100 p-8 rounded-lg w-full max-w-md text-center">
+          <div class="text-4xl text-pink-700 mb-2">“</div>
+          <p class="text-gray-600">Far far away, behind the word mountains...</p>
+          <div class="flex items-center justify-center mt-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="h-12 w-12 rounded-full overflow-hidden shadow-md">
+                <img
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="Emily Clark"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div>
+                <div class="text-sm font-bold text-gray-800 sm:text-base">Emily Clark</div>
+                <div class="text-xs text-gray-500">Project Manager</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="flex justify-center">
+        <div class="bg-gray-100 p-8 rounded-lg w-full max-w-md text-center">
+          <div class="text-4xl text-pink-700 mb-2">“</div>
+          <p class="text-gray-600">Far far away, behind the word mountains...</p>
+          <div class="flex items-center justify-center mt-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="h-12 w-12 rounded-full overflow-hidden shadow-md">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Roger Scott"
+                  class="h-full w-full object-cover object-center"
+                />
+              </div>
+              <div>
+                <div class="text-sm font-bold text-gray-800 sm:text-base">Roger Scott</div>
+                <div class="text-xs text-gray-500">Marketing Manager</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!--Owl-carousel -->
+  </div>
+<!---->
+
+  <!-- Main content area -->
+  <main class="flex-grow">
+    <!-- Page content goes here -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white relative pt-20 pb-10 w-full">
+    <!-- Diagonal top edge -->
+    <div class="absolute top-0 left-0 w-full h-20 bg-gray-100 transform -translate-y-full skew-y-3"></div>
+
+    <div class="w-full px-6 grid grid-cols-1 md:grid-cols-5 gap-10 relative z-10">
+      <!-- Logo and description -->
+      <div>
+        <h2 class="text-xl font-bold mb-4">avo</h2>
+        <p class="text-gray-400 text-sm">Far far away, behind the word mountains, far from the countries.</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Community -->
+      <div>
+        <h3 class="font-semibold mb-4">Community</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="#">› Projects</a></li>
+          <li><a href="#">› Team</a></li>
+          <li><a href="#">› Reviews</a></li>
+          <li><a href="#">› FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- About Us -->
+      <div>
+        <h3 class="font-semibold mb-4">About Us</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="#">› Our Story</a></li>
+          <li><a href="#">› Meet the team</a></li>
+          <li><a href="#">› Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="font-semibold mb-4">Company</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="#">› About Us</a></li>
+          <li><a href="#">› Press</a></li>
+          <li><a href="#">› Contact</a></li>
+          <li><a href="#">› Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="font-semibold mb-4">Have a Questions?</h3>
+        <ul class="text-gray-400 text-sm space-y-3">
+          <li class="flex items-start space-x-2">
+            <span>📍</span>
+            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span>📞</span><span>+2 392 3929 210</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span>📧</span><span>info@yourdomain.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-gray-400 text-sm mt-10 px-6">
+      <p>Copyright ©2025 All rights reserved | This template is made 
+        with <span class="text-red-500">❤</span> by 
+        <a href="https://colorlib.com" class="text-pink-400 hover:underline">Colorlib</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- FontAwesome (for icons) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- ✅ Navbar Toggle Script -->
+ <script>
+  const menuBtn = document.getElementById("menu-btn");
+  const navLinks = document.getElementById("nav-links");
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("hidden");
+  });
+</script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+   <!-- jQuery + Owl Carousel -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+   <!-- Init Script -->
+   <script>
+     $(document).ready(function () {
+       $(".owl-carousel").owlCarousel({
+         loop: true,
+         margin: 30,
+         nav: false,
+         dots: true,
+         autoplay: true,
+         autoplayTimeout: 4000,
+         responsive: {
+           0: { items: 1 },
+           768: { items: 2 },
+           1024: { items: 3 }
+         }
+       });
+     });
+   </script
+
+</body>
+</html>

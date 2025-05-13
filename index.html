@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avo Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+  </style><!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <style>
+      .owl-dot.active span {
+        background-color: #e11d48 !important;
+      }
+      .owl-dot span {
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        background: #bbb !important;
+        display: block;
+        border-radius: 50%;
+        transition: background 0.3s;
+      }
+    </style>
+
+</head>
+
+<body class="bg-black text-white">
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-gray-900 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <!-- Logo -->
+    <div class="text-xl font-bold text-white">
+      <span class="text-red-600">a</span>vo
+    </div>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Navigation Links -->
+    <nav id="nav-links"
+    class="hidden md:flex flex-col md:flex-row gap-6 text-sm font-medium md:items-center absolute md:static bg-gray-900 md:bg-transparent w-full left-0 top-full md:w-auto px-6 md:px-0 py-4 md:py-0">
+    <a href="/index.html" class="text-red-500">HOME</a>
+    <a href="./pages/About.html" class="text-white hover:text-red-500 transition">ABOUT</a>
+    <a href="./pages/Work.html" class="text-white hover:text-red-500 transition">WORK</a>
+    <a href="./pages/Blog.html" class="text-white hover:text-red-500 transition">BLOG</a>
+    <a href="./pages/Contact.html" class="text-white hover:text-red-500 transition">CONTACT</a>
+  </nav>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+  <section class="h-screen relative flex items-center bg-cover bg-center" style="background-image: url('https://preview.colorlib.com/theme/avo/images/bg_1.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+
+      <!-- Left Text Block -->
+      <div class="space-y-6">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          WE CREATE <br>
+          MODERN & <br>
+          MINIMAL WEBSITE
+        </h1>
+        <p class="text-gray-300">
+          A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        </p>
+        <a href="#" class="inline-block bg-red-600 hover:bg-red-700 transition text-white px-6 py-3 rounded-md font-medium">
+          Start Project
+        </a>
+      </div>
+
+      <!-- Right Stats Block -->
+      <div class="text-right md:text-left mt-10 md:mt-0">
+        <h2 class="text-6xl font-bold text-white">
+          <span id="counter" class="inline-block">0</span><span class="text-red-600">|</span>
+        </h2>
+        <p class="text-gray-300 mt-2">
+          More than a<br />hundred successful<br />projects
+        </p>
+      </div>
+      
+      
+
+    
+  </section>
+  <div class="absolute  top-[48.45rem] left-[0rem] w-[60rem] h-20 bg-white transform -translate-y-full skew-y-3"></div> 
+  <div class="absolute  top-[48.9rem] left-[60rem] w-[40rem] h-24 bg-white  transform -translate-y-full -skew-y-6"></div> 
+  <!-- Services Section -->
+  <section class="py-16 px-4 text-center bg-white text-black">
+    <h2 class="text-3xl font-bold mb-12">ABOUT US</h2>
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-center">
+      <!-- Service Item -->
+      <div>
+        <img src="https://img.icons8.com/ios-filled/50/design.png" class="mx-auto mb-2" alt="UI/UX Design">
+        <p>UI/UX Design</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/ios-filled/50/code.png" class="mx-auto mb-2" alt="Web Development">
+        <p>Web Development</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/ios-filled/50/layers.png" class="mx-auto mb-2" alt="Product Design">
+        <p>Product Design</p>
+      </div>
+      <div>
+        <img src="https://img.icons8.com/ios-filled/50/smartphone.png" class="mx-auto mb-2" alt="Mobile Apps">
+        <p>Mobile Apps</p>
+      </div>
+      <div>
+        <img src="https://png.pngtree.com/png-vector/20220529/ourmid/pngtree-vector-illustration-of-a-magnifying-glass-fused-with-seo-logo-for-enhanced-search-engine-optimization-vector-png-image_45904114.jpg" class="mx-auto mb-2" alt="SEO">
+        <p>SEO</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Content Section -->
+  <section class="px-4 py-16">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      
+      <!-- Left Text Block -->
+      <div class="text-center md:text-left md:col-span-1">
+        <h3 class="text-2xl font-semibold mb-4">Welcome to AVO A<br />Personal Porfolio<br />Web Agency</h3>
+        <p class="text-gray-500">
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+          A small river named Duden flows by their place and supplies it with the necessary regelialia.
+          It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+        </p>
+      </div>
+
+      <!-- Center Image -->
+      <div class="md:col-span-1 flex justify-center">
+        <img src="https://preview.colorlib.com/theme/avo/images/about.jpg" alt="Office" class="rounded shadow-md w-full max-w-sm">
+      </div>
+
+      <!-- Right Text Block -->
+      <div class="text-center md:text-left md:col-span-1">
+        <p class="text-gray-500 mb-4">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+          A small river named Duden flows by their place and supplies it with the necessary regelialia.
+        </p>
+        <button class="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition">View all projects</button>
+      </div>
+
+    </div>
+  </section>
+  <section class="py-16 px-4 sm:px-6 lg:px-20">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+      
+      <!-- Box 1 -->
+      <div>
+        <div class="text-4xl text-red-600 font-semibold">01</div>
+        <hr class="w-12 border-t border-gray-300 my-2 mx-auto md:mx-0">
+        <h3 class="text-xl font-semibold mt-2">Search Engine Optimization</h3>
+        <p class="text-gray-500 mt-2 text-sm">
+          Far far away, behind the word mountains
+        </p>
+      </div>
+
+      <!-- Box 2 -->
+      <div>
+        <div class="text-4xl text-red-600 font-semibold">02</div>
+        <hr class="w-12 border-t border-gray-300 my-2 mx-auto md:mx-0">
+        <h3 class="text-xl font-semibold mt-2">Search Engine Optimization</h3>
+        <p class="text-gray-500 mt-2 text-sm">
+          Far far away, behind the word mountains
+        </p>
+      </div>
+
+      <!-- Box 3 -->
+      <div>
+        <div class="text-4xl text-red-600 font-semibold">03</div>
+        <hr class="w-12 border-t border-gray-300 my-2 mx-auto md:mx-0">
+        <h3 class="text-xl font-semibold mt-2">Search Engine Optimization</h3>
+        <p class="text-gray-500 mt-2 text-sm">
+          Far far away, behind the word mountains
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <section class="py-16 px-4 sm:px-6 lg:px-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12 text-black">OUR WORKS</h2>
+
+      
+<!-- Section 1 -->
+<div class=" py-6 sm:py-8">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div class="grid gap-6 md:grid-cols-2 lg:gap-8 p-4 sm:p-6 md:p-6 lg:p-8">
+
+      <!-- Left: Image -->
+      <div class="flex items-center justify-center">
+        <div class="h-64 sm:h-80 md:h-96 lg:h-[70vh] overflow-hidden bg-gray-100 shadow-lg relative">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/alexa-stevenson-family-room-66a294025bb69.jpeg?crop=1.00xw:0.834xh;0,0.118xh&resize=980:*"
+            loading="lazy"
+            alt="Family Room"
+            class="h-full w-full object-cover object-center"
+          />
+        </div>
+      </div>
+
+      <!-- Right: Text + Testimonial aligned to the left -->
+      <div class="flex flex-col justify-center items-start text-left">
+        <div class="text-gray-600 mb-1">
+          Web Design
+        </div>
+
+        <h1 class="mb-3 text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">
+          Cassette tape
+        </h1>
+
+        <p class="mt-4 mb-4 text-gray-500 text-sm sm:text-base md:text-lg">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        </p>
+
+        <!-- Testimonial -->
+        <div class="flex items-center gap-3 mb-3">
+          <div class="mt-4 h-12 w-12 rounded-full bg-gray-100 overflow-hidden shadow-md">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAp3Z1hXfTVTKtbw3vE75-rtfr1ZCFcPSw4A&s"
+              alt="Jamie Jonson"
+              class="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div>
+            <div class="text-sm font-bold text-gray-800 sm:text-base">Jamie Jonson</div>
+            <div class="text-xs text-gray-400">avo.com</div>
+          </div>
+        </div>
+
+        <!-- View Portfolio Button -->
+        <a href="#" class="mt-4 inline-block px-5 py-2 bg-blue-100 text-black rounded-lg text-sm hover:bg-blue-100 transition">
+          View Portfolio
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Section 2 -->
+<div class=" py-6 sm:py-8">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div class="grid gap-6 md:grid-cols-2 lg:gap-8 p-4 sm:p-6 md:p-6 lg:p-8">
+
+      <!-- Left: Text + Testimonial with Centered Text -->
+      <div class="flex flex-col justify-center text-left order-2 md:order-1 items-start">
+        <div class="text-gray-600 mb-1">
+          Name 2
+        </div>
+
+        <h1 class="mb-3 text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">
+          Miniwall Clock
+        </h1>
+
+        <p class="mt-4 mb-4 text-gray-500 text-sm sm:text-base md:text-lg">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        </p>
+
+        <!-- Testimonial -->
+        <div class="flex items-center gap-3 mb-3">
+          <div class="mt-4 h-12 w-12 rounded-full bg-gray-100 overflow-hidden shadow-md">
+            <img
+              src="https://i.tribune.com.pk/media/images/2679469-expmimrankhan-1722763997-630-640x4801722765353-0/2679469-expmimrankhan-1722763997-630-640x4801722765353-0.jpg"
+              alt="Imran Khan"
+              class="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div>
+            <div class="text-sm font-bold text-gray-800 sm:text-base">Imran Khan</div>
+            <div class="text-xs text-gray-400">avo.com</div>
+          </div>
+        </div>
+
+        <!-- View Portfolio Button -->
+        <a href="#" class="mt-4 inline-block px-5 py-2 bg-blue-100 text-black rounded-lg text-sm hover:bg-blue-100 transition">
+          View Portfolio
+        </a>
+      </div>
+
+      <!-- Right: Image with Centered Text -->
+      <div class="order-1 md:order-2 flex items-center justify-center">
+        <div class="h-64 sm:h-80 md:h-96 lg:h-[70vh] overflow-hidden bg-gray-100 shadow-lg relative">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/463490668.jpg?k=68307462fc167a2d7a92a7d8b8c50f2613a4a360dc5cdd6808a019230a175396&o=&hp=1"
+            loading="lazy"
+            alt="Apartments"
+            class="h-full w-full object-cover object-center"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--Section 2 End-->
+
+
+<!--Section 3 Start-->
+<div class=" py-6 sm:py-8">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div class="grid gap-6 md:grid-cols-2 lg:gap-8 p-4 sm:p-6 md:p-6 lg:p-8">
+
+      <!-- Left: Image -->
+      <div class="flex items-center justify-center">
+        <div class="h-64 sm:h-80 md:h-96 lg:h-[70vh] overflow-hidden bg-gray-100 shadow-lg relative">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/alexa-stevenson-family-room-66a294025bb69.jpeg?crop=1.00xw:0.834xh;0,0.118xh&resize=980:*"
+            loading="lazy"
+            alt="Family Room"
+            class="h-full w-full object-cover object-center"
+          />
+        </div>
+      </div>
+
+      <!-- Right: Text + Testimonial aligned to the left -->
+      <div class="flex flex-col justify-center items-start text-left">
+        <div class="text-gray-600 mb-1">
+          Web Design
+        </div>
+
+        <h1 class="mb-3 text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">
+          Cassette tape
+        </h1>
+
+        <p class="mt-4 mb-4 text-gray-500 text-sm sm:text-base md:text-lg">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        </p>
+
+        <!-- Testimonial -->
+        <div class="flex items-center gap-3 mb-3">
+          <div class="mt-4 h-12 w-12 rounded-full bg-gray-100 overflow-hidden shadow-md">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAp3Z1hXfTVTKtbw3vE75-rtfr1ZCFcPSw4A&s"
+              alt="Jamie Jonson"
+              class="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div>
+            <div class="text-sm font-bold text-gray-800 sm:text-base">Jamie Jonson</div>
+            <div class="text-xs text-gray-400">avo.com</div>
+          </div>
+        </div>
+
+        <!-- View Portfolio Button -->
+        <a href="#" class="mt-4 inline-block px-5 py-2 bg-blue-100 text-black rounded-lg text-sm hover:bg-blue-100 transition">
+          View Portfolio
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--Section 3 End-->
+
+<!--Section 4 Start-->
+<div class=" py-6 sm:py-8">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div class="grid gap-6 md:grid-cols-2 lg:gap-8 p-4 sm:p-6 md:p-6 lg:p-8">
+
+      <!-- Left: Text + Testimonial with Centered Text -->
+      <div class="flex flex-col justify-center text-left order-2 md:order-1 items-start">
+        <div class="text-gray-600 mb-1">
+          Name 2
+        </div>
+
+        <h1 class="mb-3 text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">
+          Miniwall Clock
+        </h1>
+
+        <p class="mt-4 mb-4 text-gray-500 text-sm sm:text-base md:text-lg">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        </p>
+
+        <!-- Testimonial -->
+        <div class="flex items-center gap-3 mb-3">
+          <div class="mt-4 h-12 w-12 rounded-full bg-gray-100 overflow-hidden shadow-md">
+            <img
+              src="https://i.tribune.com.pk/media/images/2679469-expmimrankhan-1722763997-630-640x4801722765353-0/2679469-expmimrankhan-1722763997-630-640x4801722765353-0.jpg"
+              alt="Imran Khan"
+              class="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div>
+            <div class="text-sm font-bold text-gray-800 sm:text-base">Imran Khan</div>
+            <div class="text-xs text-gray-400">avo.com</div>
+          </div>
+        </div>
+
+        <!-- View Portfolio Button -->
+        <a href="#" class="mt-4 inline-block px-5 py-2 bg-blue-100 text-black rounded-lg text-sm hover:bg-blue-100 transition">
+          View Portfolio
+        </a>
+      </div>
+
+      <!-- Right: Image with Centered Text -->
+      <div class="order-1 md:order-2 flex items-center justify-center">
+        <div class="h-64 sm:h-80 md:h-96 lg:h-[70vh] overflow-hidden bg-gray-100 shadow-lg relative">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/463490668.jpg?k=68307462fc167a2d7a92a7d8b8c50f2613a4a360dc5cdd6808a019230a175396&o=&hp=1"
+            loading="lazy"
+            alt="Apartments"
+            class="h-full w-full object-cover object-center"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--Section 4 End-->
+
+<!--Section 5 Start-->
+<div class=" py-6 sm:py-8">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div class="grid gap-6 md:grid-cols-2 lg:gap-8 p-4 sm:p-6 md:p-6 lg:p-8">
+
+      <!-- Left: Image -->
+      <div class="flex items-center justify-center">
+        <div class="h-64 sm:h-80 md:h-96 lg:h-[70vh] overflow-hidden bg-gray-100 shadow-lg relative">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/alexa-stevenson-family-room-66a294025bb69.jpeg?crop=1.00xw:0.834xh;0,0.118xh&resize=980:*"
+            loading="lazy"
+            alt="Family Room"
+            class="h-full w-full object-cover object-center"
+          />
+        </div>
+      </div>
+
+      <!-- Right: Text + Testimonial aligned to the left -->
+      <div class="flex flex-col justify-center items-start text-left">
+        <div class="text-gray-600 mb-1">
+          Web Design
+        </div>
+
+        <h1 class="mb-3 text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">
+          Cassette tape
+        </h1>
+
+        <p class="mt-4 mb-4 text-gray-500 text-sm sm:text-base md:text-lg">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        </p>
+
+        <!-- Testimonial -->
+        <div class="flex items-center gap-3 mb-3">
+          <div class="mt-4 h-12 w-12 rounded-full bg-gray-100 overflow-hidden shadow-md">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAp3Z1hXfTVTKtbw3vE75-rtfr1ZCFcPSw4A&s"
+              alt="Jamie Jonson"
+              class="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div>
+            <div class="text-sm font-bold text-gray-800 sm:text-base">Jamie Jonson</div>
+            <div class="text-xs text-gray-400">avo.com</div>
+          </div>
+        </div>
+
+        <!-- View Portfolio Button -->
+        <a href="#" class="mt-4 inline-block px-5 py-2 bg-blue-100 text-black rounded-lg text-sm hover:bg-blue-100 transition">
+          View Portfolio
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--Section 5 End-->
+
+<!--Section 6 Start-->
+<div class=" py-6 sm:py-8">
+  <div class="mx-auto max-w-screen-xl px-4 md:px-8">
+    <div class="grid gap-6 md:grid-cols-2 lg:gap-8 p-4 sm:p-6 md:p-6 lg:p-8">
+
+      <!-- Left: Text + Testimonial with Centered Text -->
+      <div class="flex flex-col justify-center text-left order-2 md:order-1 items-start">
+        <div class="text-gray-600 mb-1">
+          Name 2
+        </div>
+
+        <h1 class="mb-3 text-xl sm:text-2xl md:text-3xl font-bold text-gray-800">
+          Miniwall Clock
+        </h1>
+
+        <p class="mt-4 mb-4 text-gray-500 text-sm sm:text-base md:text-lg">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        </p>
+
+        <!-- Testimonial -->
+        <div class="flex items-center gap-3 mb-3">
+          <div class="mt-4 h-12 w-12 rounded-full bg-gray-100 overflow-hidden shadow-md">
+            <img
+              src="https://i.tribune.com.pk/media/images/2679469-expmimrankhan-1722763997-630-640x4801722765353-0/2679469-expmimrankhan-1722763997-630-640x4801722765353-0.jpg"
+              alt="Imran Khan"
+              class="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div>
+            <div class="text-sm font-bold text-gray-800 sm:text-base">Imran Khan</div>
+            <div class="text-xs text-gray-400">avo.com</div>
+          </div>
+        </div>
+        
+
+        <!-- View Portfolio Button -->
+        <a href="#" class="mt-4 inline-block px-5 py-2 bg-blue-100 text-black rounded-lg text-sm hover:bg-blue-100 transition">
+          View Portfolio
+        </a>
+      </div>
+
+      <!-- Right: Image with Centered Text -->
+      <div class="order-1 md:order-2 flex items-center justify-center">
+        <div class="h-64 sm:h-80 md:h-96 lg:h-[70vh] overflow-hidden bg-gray-100 shadow-lg relative">
+          <img
+            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/463490668.jpg?k=68307462fc167a2d7a92a7d8b8c50f2613a4a360dc5cdd6808a019230a175396&o=&hp=1"
+            loading="lazy"
+            alt="Apartments"
+            class="h-full w-full object-cover object-center"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!--Section 6 End-->
+<!--Abou us-->
+<div class=" flex flex-col items-center justify-center min-h-screen">
+    <div class="text-center mb-8 px-4">
+      <h2 class="text-2xl md:text-4xl font-bold text-gray-800">CLIENTS SAY ABOUT US?</h2>
+    </div>
+
+    <div class="w-full max-w-6xl px-4 overflow-hidden">
+      <div class="owl-carousel owl-theme">
+        <!-- Slide 1 -->
+        <div class="flex justify-center">
+          <div class="bg-gray-100 p-8 rounded-lg w-full max-w-md text-center">
+            <div class="text-4xl text-pink-700 mb-2">“</div>
+            <p class="text-gray-600">Far far away, behind the word mountains...</p>
+            <div class="flex items-center justify-center mt-6">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="h-12 w-12 rounded-full overflow-hidden shadow-md">
+                  <img
+                    src="https://i.tribune.com.pk/media/images/2679469-expmimrankhan-1722763997-630-640x4801722765353-0/2679469-expmimrankhan-1722763997-630-640x4801722765353-0.jpg"
+                    alt="Imran Khan"
+                    class="h-full w-full object-cover object-center"
+                  />
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-gray-800 sm:text-base">Imran Khan</div>
+                  <div class="text-xs text-gray-500">Social</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="flex justify-center">
+          <div class="bg-gray-100 p-8 rounded-lg w-full max-w-md text-center">
+            <div class="text-4xl text-pink-700 mb-2">“</div>
+            <p class="text-gray-600">Far far away, behind the word mountains...</p>
+            <div class="flex items-center justify-center mt-6">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="h-12 w-12 rounded-full overflow-hidden shadow-md">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/45.jpg"
+                    alt="John Miller"
+                    class="h-full w-full object-cover object-center"
+                  />
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-gray-800 sm:text-base">John Miller</div>
+                  <div class="text-xs text-gray-500">UX Designer</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="flex justify-center">
+          <div class="bg-gray-100 p-8 rounded-lg w-full max-w-md text-center">
+            <div class="text-4xl text-pink-700 mb-2">“</div>
+            <p class="text-gray-600">Far far away, behind the word mountains...</p>
+            <div class="flex items-center justify-center mt-6">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="h-12 w-12 rounded-full overflow-hidden shadow-md">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Emily Clark"
+                    class="h-full w-full object-cover object-center"
+                  />
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-gray-800 sm:text-base">Emily Clark</div>
+                  <div class="text-xs text-gray-500">Project Manager</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="flex justify-center">
+          <div class="bg-gray-100 p-8 rounded-lg w-full max-w-md text-center">
+            <div class="text-4xl text-pink-700 mb-2">“</div>
+            <p class="text-gray-600">Far far away, behind the word mountains...</p>
+            <div class="flex items-center justify-center mt-6">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="h-12 w-12 rounded-full overflow-hidden shadow-md">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="Roger Scott"
+                    class="h-full w-full object-cover object-center"
+                  />
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-gray-800 sm:text-base">Roger Scott</div>
+                  <div class="text-xs text-gray-500">Marketing Manager</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!--Owl-carousel -->
+    </div>
+    
+    <body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="relative w-full max-w-6xl h-[300px] md:h-[400px] lg:h-[500px] rounded-lg overflow-hidden">
+      <!-- Background Image -->
+      <img src="https://cdn.pixabay.com/photo/2015/04/19/08/33/flower-729512_1280.jpg" alt="Background"
+           class="w-full h-full object-cover" />
+  
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center">
+        <div class="text-left text-white px-6 md:px-12 max-w-md">
+          <p class="text-red-500 font-semibold mb-2">Get Started</p>
+          <h1 class="text-2xl md:text-4xl font-bold leading-snug mb-4">
+            Fill in the brief and get the project estimate
+          </h1>
+          <p class="text-sm md:text-base text-gray-300 mb-6">
+            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+          </p>
+          <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded">
+            Get started
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Recent Blog-->
+    <section class="px-6 py-12 max-w-7xl mx-auto mb-[5rem]">
+      <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">RECENT BLOG</h2>
+  
+      <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        
+        <!-- Blog Card 1-->
+        <div class="bg-white shadow-md rounded overflow-hidden">
+          <h3 class="ml-4 text-lg font-semibold text-gray-800 mb-2">Amplify your blockchain team</h3>
+          <img src="https://img.freepik.com/premium-photo/beautiful-flowers-fresh-morning_40919-577.jpg" alt="Blog Image" class="w-full h-60 object-cover">
+          <div class="p-4">
+            
+            <p class="mt-4 text-sm text-gray-800 mb-1">JUNE 01, 2020 &nbsp; ADMIN &nbsp; 💬 3</p>
+            <p class="mt-4 text-sm text-gray-600">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+          </div>
+        </div>
+  
+        <!--  cards 2 -->
+        <div class="bg-white shadow-md rounded overflow-hidden">
+          <h3 class="ml-4 text-lg font-semibold text-gray-800 mb-2">Amplify your blockchain team</h3>
+          <img src="data:image/jpeg;base64,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" alt="Blog Image" class="w-full h-60 object-cover">
+          <div class="p-4">
+            
+            <p class="mt-4 text-sm text-gray-800 mb-1">JUNE 01, 2020 &nbsp; ADMIN &nbsp; 💬 3</p>
+            <p class="mt-4 text-sm text-gray-600">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+          </div>
+        </div>
+  
+       <!--  cards 3 -->
+        <div class="bg-white shadow-md rounded overflow-hidden">
+          <h3 class="ml-4 text-lg font-semibold text-gray-800 mb-2">Amplify your blockchain team</h3>
+          <img src="https://c0.wallpaperflare.com/preview/510/946/455/rose-flower-flowers-romantic.jpg" alt="Blog Image" class="w-full h-60 object-cover">
+          <div class="p-4">
+            
+            <p class="mt-4 text-sm text-gray-800 mb-1">JUNE 01, 2020 &nbsp; ADMIN &nbsp; 💬 3</p>
+            <p class="mt-4 text-sm text-gray-600">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+          </div>
+        </div>
+  <!--  cards 4 -->
+        <div class="bg-white shadow-md rounded overflow-hidden ">
+          <h3 class="ml-4 text-lg font-semibold text-gray-800 mb-2">Amplify your blockchain team</h3>
+          <img src="https://media.istockphoto.com/id/1270427624/photo/lotus-blooming-in-summer-pond.jpg?s=612x612&w=0&k=20&c=jJzQcMRV27WRVKPKL15FLzvNx1y4Q4B1DmO83ieLoRU=" alt="Blog Image" class="w-full h-60 object-cover">
+          <div class="p-4">
+            <p class="mt-4 text-sm text-gray-800 mb-1">JUNE 01, 2020 &nbsp; ADMIN &nbsp; 💬 3</p>
+            <p class="mt-4 text-sm text-gray-600">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+          </div>
+        </div>
+  
+      </div>
+    </section>
+    <din class="bg-gray-100 h-[20vh] flex flex-col ">
+
+      <!-- Main content area -->
+      <!-- <main class="flex-grow"> -->
+        <!-- Page content goes here -->
+      <!-- </main> -->
+    
+      <!-- Footer -->
+      <footer class="bg-black text-white relative pt-20 pb-10 w-[100vw] ">
+        <!-- Diagonal top edge -->
+        <div class="absolute  top-0 left-0 w-full h-20 bg-gray-100 transform -translate-y-full skew-y-3"></div>
+    
+        <div class="w-full px-6 grid grid-cols-1 md:grid-cols-5 gap-10 relative z-10">
+          <!-- Logo and description -->
+          <div>
+            <h2 class="text-xl font-bold mb-4">avo</h2>
+            <p class="text-gray-400 text-sm">Far far away, behind the word mountains, far from the countries.</p>
+            <div class="flex space-x-4 mt-4">
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+    
+          <!-- Community -->
+          <div>
+            <h3 class="font-semibold mb-4">Community</h3>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><a href="#">› Projects</a></li>
+              <li><a href="#">› Team</a></li>
+              <li><a href="#">› Reviews</a></li>
+              <li><a href="#">› FAQs</a></li>
+            </ul>
+          </div>
+    
+          <!-- About Us -->
+          <div>
+            <h3 class="font-semibold mb-4">About Us</h3>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><a href="#">› Our Story</a></li>
+              <li><a href="#">› Meet the team</a></li>
+              <li><a href="#">› Careers</a></li>
+            </ul>
+          </div>
+    
+          <!-- Company -->
+          <div>
+            <h3 class="font-semibold mb-4">Company</h3>
+            <ul class="space-y-2 text-gray-400 text-sm">
+              <li><a href="#">› About Us</a></li>
+              <li><a href="#">› Press</a></li>
+              <li><a href="#">› Contact</a></li>
+              <li><a href="#">› Careers</a></li>
+            </ul>
+          </div>
+    
+          <!-- Contact -->
+          <div>
+            <h3 class="font-semibold mb-4">Have a Questions?</h3>
+            <ul class="text-gray-400 text-sm space-y-3">
+              <li class="flex items-start space-x-2">
+                <span>📍</span>
+                <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span>📞</span><span>+2 392 3929 210</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <span>📧</span><span>info@yourdomain.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center text-gray-400 text-sm mt-10 px-6">
+          <p>Copyright ©2025 All rights reserved | This template is made 
+            with <span class="text-red-500">❤</span> by 
+            <a href="https://colorlib.com" class="text-pink-400 hover:underline">Colorlib</a>
+          </p>
+        </div>
+      </footer>
+    
+      
+      <!-- FontAwesome (for icons) -->
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!--Footer End-->
+
+
+ <!-- ✅ Navbar Toggle Script -->
+ <script>
+  const menuBtn = document.getElementById("menu-btn");
+  const navLinks = document.getElementById("nav-links");
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("hidden");
+  });
+</script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counter = document.getElementById("counter");
+      let count = 0;
+      const target = 228;
+      const duration = 1500; // Total time in ms
+      const stepTime = Math.floor(duration / target);
+  
+      const interval = setInterval(() => { 
+        count++;
+        counter.textContent = count;
+        if (count >= target) clearInterval(interval);
+      }, stepTime);
+    });
+  </script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+   <!-- jQuery + Owl Carousel -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+   <!-- Init Script -->
+   <script>
+     $(document).ready(function () {
+       $(".owl-carousel").owlCarousel({
+         loop: true,
+         margin: 30,
+         nav: false,
+         dots: true,
+         autoplay: true,
+         autoplayTimeout: 4000,
+         responsive: {
+           0: { items: 1 },
+           768: { items: 2 },
+           1024: { items: 3 }
+         }
+       });
+     });
+   </script>
+</body>
+
+</html>

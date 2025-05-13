@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avo Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+  </style><!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <style>
+      .owl-dot.active span {
+        background-color: #e11d48 !important;
+      }
+      .owl-dot span {
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+        background: #bbb !important;
+        display: block;
+        border-radius: 50%;
+        transition: background 0.3s;
+      }
+    </style>
+<style>
+  @keyframes fadeBackground {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+
+  .fade-bg-1 {
+    background-image: url('https://preview.colorlib.com/theme/avo/images/bg_1.jpg');
+    animation: fadeBackground 10s infinite;
+    
+  }
+
+  .fade-bg-2 {
+    background-image: url('https://preview.colorlib.com/theme/avo/images/bg_2.jpg');
+    animation: fadeBackground 10s infinite;
+    animation-delay: 2s;
+  }
+</style>
+</head>
+
+<body class="bg-black text-white">
+  <!-- Navbar -->
+<header class="fixed top-0 left-0 w-full z-50 bg-gray-900 shadow-md">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <!-- Logo -->
+    <div class="text-xl font-bold text-white">
+      <span class="text-red-600">a</span>vo
+    </div>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+           stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Navigation Links -->
+    <nav id="nav-links"
+         class="hidden md:flex flex-col md:flex-row gap-6 text-sm font-medium md:items-center absolute md:static bg-gray-900 md:bg-transparent w-full left-0 top-full md:w-auto md:mt-0 px-6 md:px-0 py-4 md:py-0">
+                      <a href="/index.html" class="text-red-500">HOME</a>
+    <a href="./About.html" class="text-white hover:text-red-500 transition">ABOUT</a>
+    <a href="./Work.html" class="text-white hover:text-red-500 transition">WORK</a>
+    <a href="./Blog.html" class="text-white hover:text-red-500 transition">BLOG</a>
+    <a href="./Contact.html" class="text-white hover:text-red-500 transition">CONTACT</a>
+    </nav>
+  </div>
+</header>
+<div class="bg-white text-gray-800">
+<!---->
+
+<!--Hero Section-->
+  <section class="h-screen relative flex items-center bg-cover bg-center overflow-hidden">
+  <!-- First background -->
+  <div class="absolute inset-0 fade-bg-1 bg-cover bg-center"></div>
+  <!-- Second background -->
+  <div class="absolute inset-0 fade-bg-2 bg-cover bg-center"></div>
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+    <div class="flex flex-col justify-center items-start h-full px-6 md:px-20 text-white">
+     
+    <!-- Breadcrumb -->
+    <div class="text-sm text-gray-300 mb-2 ">
+      <a href="#" class="hover:text-red-500">Home</a>
+      <span class="mx-1 text-red-500">❯</span>
+      <span class="text-white">Contact Us</span>
+      <span class="mx-1 text-red-500">❯</span>
+    </div>
+
+    <!-- Heading -->
+    <h1 class="text-4xl md:text-5xl font-bold">Contact US</h1>
+  </div>
+</section>
+  </section>
+  <div class="absolute  top-[48.45rem] left-[0rem] w-[60rem] h-20 bg-white transform -translate-y-full skew-y-3"></div> 
+  <div class="absolute  top-[48.9rem] left-[60rem] w-[40rem] h-24 bg-white transform -translate-y-full -skew-y-6"></div> 
+
+  <!---->
+  <div class="bg-white text-gray-800">
+
+  <!-- Contact Header -->
+  <section class="text-center py-10 px-4">
+    <p class="text-red-600 uppercase tracking-wider font-semibold">Contact Us</p>
+    <h2 class="text-4xl font-bold mt-2 mb-3">Have a Project?</h2>
+    <p class="text-gray-400 max-w-2xl mx-auto">
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+    </p>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="max-w-6xl mx-auto px-4 py-10 md:py-16 mt-8">
+    <div class="bg-white rounded-md shadow-sm p-6 md:p-10 grid md:grid-cols-3 gap-8">
+
+      <!-- Contact Form -->
+      <form class="md:col-span-2 space-y-4">
+        <div class="grid md:grid-cols-2 gap-4">
+          <input type="text" placeholder="Your Name" class="p-3 w-full border border-gray-300 rounded" />
+          <input type="email" placeholder="Your Email" class="p-3 w-full border border-gray-300 rounded" />
+        </div>
+        <input type="text" placeholder="Subject" class="p-3 w-full border border-gray-300 rounded" />
+        <textarea rows="5" placeholder="Message" class="p-3 w-full border border-gray-300 rounded resize-none"></textarea>
+        <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded hover:bg-red-700 transition-all">
+          Send Message
+        </button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="space-y-6">
+        <div class="flex items-start space-x-4">
+          <div class="bg-red-600 text-white rounded-full p-3">
+            📍
+          </div>
+          <div>
+            <p class="font-semibold">Address:</p>
+            <p class="text-gray-500">198 West 21th Street, Suite 721<br>New York NY 10016</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="bg-red-600 text-white rounded-full p-3">
+            📞
+          </div>
+          <div>
+            <p class="font-semibold">Phone:</p>
+            <p class="text-red-600">+1235 2355 98</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="bg-red-600 text-white rounded-full p-3">
+            ✉️
+          </div>
+          <div>
+            <p class="font-semibold">Email:</p>
+            <p class="text-red-600">info@yoursite.com</p>
+          </div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <div class="bg-red-600 text-white rounded-full p-3">
+            🌐
+          </div>
+          <div>
+            <p class="font-semibold">Website:</p>
+            <p class="text-red-600">yoursite.com</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!---->
+
+  <!-- Main content area -->
+  <main class="flex-grow">
+    <!-- Page content goes here -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white relative pt-20 pb-10 w-full">
+    <!-- Diagonal top edge -->
+    <div class="absolute top-0 left-0 w-full h-20 bg-white transform -translate-y-full skew-y-3 mt-7"></div>
+
+    <div class="w-full px-6 grid grid-cols-1 md:grid-cols-5 gap-10 relative z-10">
+      <!-- Logo and description -->
+      <div>
+        <h2 class="text-xl font-bold mb-4">avo</h2>
+        <p class="text-gray-400 text-sm">Far far away, behind the word mountains, far from the countries.</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Community -->
+      <div>
+        <h3 class="font-semibold mb-4">Community</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="#">› Projects</a></li>
+          <li><a href="#">› Team</a></li>
+          <li><a href="#">› Reviews</a></li>
+          <li><a href="#">› FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- About Us -->
+      <div>
+        <h3 class="font-semibold mb-4">About Us</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="#">› Our Story</a></li>
+          <li><a href="#">› Meet the team</a></li>
+          <li><a href="#">› Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h3 class="font-semibold mb-4">Company</h3>
+        <ul class="space-y-2 text-gray-400 text-sm">
+          <li><a href="#">› About Us</a></li>
+          <li><a href="#">› Press</a></li>
+          <li><a href="#">› Contact</a></li>
+          <li><a href="#">› Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="font-semibold mb-4">Have a Questions?</h3>
+        <ul class="text-gray-400 text-sm space-y-3">
+          <li class="flex items-start space-x-2">
+            <span>📍</span>
+            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span>📞</span><span>+2 392 3929 210</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span>📧</span><span>info@yourdomain.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-gray-400 text-sm mt-10 px-6">
+      <p>Copyright ©2025 All rights reserved | This template is made 
+        with <span class="text-red-500">❤</span> by 
+        <a href="https://colorlib.com" class="text-pink-400 hover:underline">Colorlib</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- FontAwesome (for icons) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- ✅ Navbar Toggle Script -->
+ <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const navLinks = document.getElementById("nav-links");
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
+
+</body>
+</html>
